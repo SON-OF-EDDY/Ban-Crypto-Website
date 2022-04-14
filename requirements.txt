@@ -78,7 +78,6 @@ urllib3==1.26.8
 virtualenv==20.14.0
 Werkzeug==2.0.3
 whichcraft==0.6.1
-wxPython==4.1.1
 xarray==0.21.1
 zope.event==4.5.0
 zope.interface==5.4.0
