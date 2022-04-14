@@ -18,7 +18,6 @@ cycler==0.11.0
 dill==0.3.4
 distlib==0.3.4
 docutils==0.18.1
-Eel==0.14.0
 extra==0.0.0.20200726
 fastprogress==1.0.2
 filelock==3.6.0
