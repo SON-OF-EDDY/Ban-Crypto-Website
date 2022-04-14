@@ -1,0 +1,36 @@
+{%extends 'base.html'%}
+
+{%block background%}
+<link href="/static/css/home.css" rel="stylesheet">
+{%endblock%}
+
+{%block title%}
+<title>{{title}}</title>
+{%endblock%}
+
+{%block content%}
+<br/>
+
+<h1 style="text-indent: 25px;">PETITION TO BAN CRYPTOCURRENCY MINING</h1>
+<p style="text-indent: 50px;">Please support our effort by entering your name into our database.</p>
+
+<div class="container">
+    <form action="/bancrypto" METHOD="POST">
+        <input type="text" placeholder="Enter Your Name..." name="petition_form">
+        <input type="submit" value = 'Sign Petition' class="btn btn-primary">
+    </form>
+
+    <br>
+    <br>
+
+    <h1>CURRENT SIGNERS:</h1>
+    <br>
+    <ol>
+        {%for signer in signers%}
+            <li>{{signer.name}}</li>
+        {%endfor%}
+    </ol>
+
+</div>
+
+{%endblock%}

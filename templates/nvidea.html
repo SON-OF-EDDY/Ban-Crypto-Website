@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+
+{%block background%}
+<link href="/static/css/nvidea.css" rel="stylesheet">
+{%endblock%}
+
+{%block title%}
+<title>{{title}}</title>
+{%endblock%}
+
+{%block content%}
+<img src="/static/images/nvidea_3.png" width="200" height="100">
+<h1>1440p GAMING GPU's</h1>
+<h1>Cheapest Prices Found on 'NewEgg.com' :</h1>
+
+<ol>
+    {%for info in info_we_need%}
+    {%if info.price != 'NOT FOUND!!!'%}
+            <li>{{"{:<11}".format(info.name)}} = ${{info.price}}</li>
+        {%else%}
+            <li>{{"{:<11}".format(info.name)}} = {{info.price}}</li>
+        {%endif%}
+    {%endfor%}
+</ol>
+
+<br>
+<p>PRICES CURRENT AS OF : {{current_time}}, Moscow Time</p>
+
+{%endblock%}

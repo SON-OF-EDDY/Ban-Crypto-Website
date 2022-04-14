@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+
+{%block background%}
+<link href="/static/css/amd.css" rel="stylesheet">
+{%endblock%}
+
+{%block title%}
+<title>{{title}}</title>
+{%endblock%}
+
+{%block content%}
+<img src="/static/images/amd_3.png" width="100" height="100">
+<h1>1440p GAMING GPU's</h1>
+<h1>Cheapest Prices Found on 'NewEgg.com' :</h1>
+
+<ol>
+    {%for info in info_we_need%}
+        {%if info.price != 'NOT FOUND!!!'%}
+            <li>{{(info.name)}} = ${{info.price}}</li>
+        {%else%}
+            <li>{{(info.name)}} = {{info.price}}</li>
+        {%endif%}
+    {%endfor%}
+</ol>
+
+<br>
+<p>PRICES CURRENT AS OF : {{current_time}}, Moscow Time</p>
+
+{%endblock%}
