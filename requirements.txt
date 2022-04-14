@@ -35,7 +35,6 @@ iota==1.4.20
 itsdangerous==2.1.0
 Jinja2==3.0.3
 Kivy==2.1.0
-kivy-deps.angle==0.3.2
 kivy-deps.glew==0.3.1
 kivy-deps.gstreamer==0.3.3
 kivy-deps.sdl2==0.4.5
